@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mundo da Velha - Página de Login</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/fontawesome-all.js"></script>
+</head>
+<body oncontextmenu="return false;">
+<header>
+    <div id="top-social">
+        <div id="email">
+            <p>
+                <i class="icon fas fa-envelope"></i> suporte@mundodavelha.com.br
+            </p>
+        </div>
+        <div id="facebook">
+            <p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> (11) 94110-1028</p>
+        </div>
+        <div id="login">
+                <div class="btn-group">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span><a id=""class="dropdown-toggle" data-toggle="dropdown">
+                    Login</a><span class="glyphicon glyphicon-registration-mark" aria-hidden="true"></span> <a class="hover" href="cadastro.jsp">
+                         Cadastrar-se</a>
+                        <div class="dropdown-menu" id="dropdown">
+                            <div class="input-group">
+                                <p id="dropdown-titulo">Painel de login</p>
+                                <li role="separator" class="divider"></li>
+                                <form action="login" method="post">
+                                    <label for="idLogin">
+                                        Login:
+                                    </label>
+                                    <input type="text" class="form-control" name="login" id="idLogin" placeholder="Nome de usuário..."><br><br><br><br>
+                                    <label for="idSenha">
+                                        Senha: 
+                                    </label>
+                                <input type="password" class="form-control" name="senha" id="idSenha" placeholder="Senha..."><br><br><br><br>
+                                <input type="submit" class="btn btn-default" value="Login"><br>
+                                <li role="separator" class="divider"></li>
+                                <div id="normal">
+                                    <p>
+                                        Não possui cadastro ainda? Clique <a href="cadastro.jsp">aqui</a>e cadastre-se!
+                                    </p>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+    <div id="titulo">
+        <h1><i id="teste" class="icon fab fa-slack-hash"></i> HashWorld <i id="teste" class="icon fab fa-slack-hash"></i></h1>
+    </div>
+    <nav id="menu-principal">
+            <ul>
+                <li class="ativo"><a href="index.jsp" class="ativo">Home</a></li>
+                <li><a href="cadastro.jsp">Cadastro</a></li>
+                <li><a href="sobre.jsp">Sobre a empresa</a></li>
+                    <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
+                            aria-expanded="false">Ranking <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Por partidas jogadas</a></li>
+                              <li><a href="#">Por vitórias</a></li>
+                            </ul>
+                    </li>
+            </ul>
+    </nav>
+</header>
+<section id="conteudo">
+        <div class="jumbo">
+                <h1>MUNDO DA VELHA</h1>
+                <p>Dispute com outros jogadores um duelo para ver quem é o melhor.</p>
+                <h6>v0.1</h6>
+        </div>
+        <section id="features">
+            <div class="umxum">
+                <span class="titulo">1<span class="diferente">x</span>1</span><br />
+                <hr />
+                <span class="descricao">Jogue 1x1 com outros jogadores</span><br><br><br>
+                <span class="status">Status: Indisponível</span>
+            </div>
+            <div class="rede">
+                <span class="titulo"><img src="img/transfer.png"></span><br>
+                <hr />
+                <span class="descricao">Jogue com seus amigos na sua rede de computadores</span><br><br>
+                <span class="status">Status: Indisponível</span>
+            </div>
+            <div class="lvl">
+                <span class="titulo">T<span class="diferente">O</span>P<span class="diferente">1</span>0</span><br>
+                <hr />
+                <span class="descricao">Evolua de nível a cada partida e entre no ranking com os melhores!</span><br><br>
+                <span class="status">Status: Indisponível</span>
+            </div>
+        </section>
+        <section id="informacoes">
+            <div class="descricao">
+            <h1>Sobre o jogo</h1>
+            <p>O jogo atualmente encontra-se na sua fase de desenvolvimento, onde surgiu-se a ideia da aplicação como atualização de
+                um projeto já desenvolvido em aula pela equipe. O conceito do jogo é de dois jogadores se enfrentarem em uma
+                partida de <strong>jogo da velha</strong>. Cada jogador necessitará possuir um cadastro no sistema, fornecendo algumas informações necessárias
+                para identificação do jogador.
+            </p>
+            <p>
+                    A cada partida, seu <strong>WLT</strong> (Win, lose, tie) é atualizado, onde os jogadores com maior
+                número de vítorias e/ou partidas estarão no nosso hall da fama. Junte-se ao <strong>Mundo da Velha</strong> hoje!
+            </p>
+            </div>
+            <aside id="exemploTabuleiro">
+                <img src="img/tabuleiro.png">
+            </aside>
+        </section>
+</section>
+<footer>
+    <p class="copyright">Desenvolvido por <strong>Gustavo André Lei</strong> - 2016</p>
+    <p class="paginas"><a href="index.jsp">Home</a> | <a href="sobre.jsp">Sobre</a> 
+        | <a href="cadastro.jsp">Cadastro</a> | <a href="ranking.jsp">Ranking</a></p>
+    <div id="social">
+            <a href="http://www.facebook.com/gustavoolei" target="_blank">
+                <i id="social-item" class="icon fab fa-facebook-f"></i>
+            </a>
+            <a href="http://twitter.com/leii_gustavo" target="_blank">
+                <i id="social-item" class="fab fa-twitter"></i>
+            </a>
+            <a href="http://www.linkedin.com/in/gustavolei" target="_blank">
+                <i id="social-item" class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="http://github.com/XenoStory" target="_blank">
+                <i id="social-item" class="fab fa-github"></i>
+            </a>
+    </div>
+</footer>
+</body>
+</html>
