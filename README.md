@@ -2,6 +2,10 @@
 
 HashWorld frontend. At the momment, it's in development.
 
+Only import commits will be described bellow.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
 Last update: 13-03-2018
 
 14-03-2018 commit: 
